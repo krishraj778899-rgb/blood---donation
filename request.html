@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Request Blood - LifeDrop</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header" id="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🩸</span>
+                <span>Life<span>Drop</span></span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open menu">
+                ☰
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+                <a href="index.html#blood-groups">
+                    Blood Groups
+                </a>
+
+                <a href="index.html#how-it-works">
+                    How It Works
+                </a>
+
+                <a href="request.html" class="active">
+                    Request Blood
+                </a>
+
+                <a href="register.html" class="nav-donor-btn">
+                    Become a Donor
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE HERO ================= -->
+
+    <section class="inner-page-hero request-hero">
+
+        <div class="container">
+
+            <div class="inner-hero-content">
+
+                <span class="section-tag">
+                    🚨 BLOOD REQUEST
+                </span>
+
+                <h1>
+                    Request
+                    <span>Blood</span>
+                </h1>
+
+                <p>
+                    Tell us what blood group you need and where
+                    it is required. Your request can help connect
+                    you with potential donors.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REQUEST SECTION ================= -->
+
+    <section class="blood-request-section">
+
+        <div class="container">
+
+            <div class="request-grid">
+
+
+                <!-- ================= LEFT PANEL ================= -->
+
+                <div class="request-info">
+
+                    <span class="section-tag">
+                        NEED BLOOD?
+                    </span>
+
+                    <h2>
+                        We're Here to
+                        <span>Help</span>
+                    </h2>
+
+                    <p>
+                        Submit the blood requirement details carefully.
+                        Once our backend is connected, the request
+                        can be matched with suitable donors.
+                    </p>
+
+
+                    <!-- Emergency Alert -->
+
+                    <div class="urgent-box">
+
+                        <div class="urgent-icon">
+                            🚨
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Emergency?
+                            </h3>
+
+                            <p>
+                                For critical medical emergencies,
+                                always contact your hospital or
+                                local emergency services immediately.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Process -->
+
+                    <div class="request-process">
+
+                        <h3>
+                            How It Works
+                        </h3>
+
+
+                        <div class="request-step">
+
+                            <span>01</span>
+
+                            <div>
+                                <strong>
+                                    Submit Request
+                                </strong>
+
+                                <p>
+                                    Enter patient and blood requirement details.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="request-step">
+
+                            <span>02</span>
+
+                            <div>
+                                <strong>
+                                    Find Potential Donors
+                                </strong>
+
+                                <p>
+                                    The system will search for matching donors.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="request-step">
+
+                            <span>03</span>
+
+                            <div>
+                                <strong>
+                                    Connect & Coordinate
+                                </strong>
+
+                                <p>
+                                    Contact information can be used for coordination.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Donor CTA -->
+
+                    <div class="donor-cta">
+
+                        <span>
+                            ❤️
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Want to help instead?
+                            </h3>
+
+                            <p>
+                                Register yourself as a blood donor.
+                            </p>
+
+                            <a href="register.html">
+                                Become a Donor →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= FORM CARD ================= -->
+
+                <div class="request-card">
+
+                    <div class="form-header">
+
+                        <span class="form-icon">
+                            🩸
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                Blood Request Form
+                            </h2>
+
+                            <p>
+                                Please provide accurate information.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <form id="bloodRequestForm">
+
+
+                        <!-- Patient Name -->
+
+                        <div class="form-group">
+
+                            <label for="patientName">
+                                Patient Name
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="patientName"
+                                name="patientName"
+                                placeholder="Enter patient's full name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Contact + Blood Group -->
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="contact">
+                                    Contact Number
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="contact"
+                                    name="contact"
+                                    placeholder="10-digit phone number"
+                                    maxlength="10"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="requiredBlood">
+                                    Required Blood Group
+                                    <span>*</span>
+                                </label>
+
+                                <select
+                                    id="requiredBlood"
+                                    name="requiredBlood"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select blood group
+                                    </option>
+
+                                    <option value="A+">A+</option>
+                                    <option value="A-">A-</option>
+
+                                    <option value="B+">B+</option>
+                                    <option value="B-">B-</option>
+
+                                    <option value="AB+">AB+</option>
+                                    <option value="AB-">AB-</option>
+
+                                    <option value="O+">O+</option>
+                                    <option value="O-">O-</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Units + Priority -->
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="units">
+                                    Units Required
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="units"
+                                    name="units"
+                                    min="1"
+                                    max="20"
+                                    placeholder="Example: 2"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="priority">
+                                    Priority
+                                    <span>*</span>
+                                </label>
+
+                                <select
+                                    id="priority"
+                                    name="priority"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select priority
+                                    </option>
+
+                                    <option value="Normal">
+                                        Normal
+                                    </option>
+
+                                    <option value="Urgent">
+                                        Urgent
+                                    </option>
+
+                                    <option value="Emergency">
+                                        Emergency
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Hospital -->
+
+                        <div class="form-group">
+
+                            <label for="hospital">
+                                Hospital / Medical Center
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="hospital"
+                                name="hospital"
+                                placeholder="Enter hospital name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- City + Required Date -->
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="requestCity">
+                                    City
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="requestCity"
+                                    name="city"
+                                    placeholder="Enter city"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="requiredDate">
+                                    Required Date
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="requiredDate"
+                                    name="requiredDate"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Additional Information -->
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Additional Information
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Add any important information about the blood requirement..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- Consent -->
+
+                        <div class="form-checkbox">
+
+                            <input
+                                type="checkbox"
+                                id="requestConsent"
+                                required
+                            >
+
+                            <label for="requestConsent">
+                                I confirm that the information provided
+                                is accurate and the blood requirement
+                                is genuine.
+                            </label>
+
+                        </div>
+
+
+                        <!-- Submit -->
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary form-submit"
+                        >
+
+                            Submit Blood Request
+
+                            <span>→</span>
+
+                        </button>
+
+
+                        <!-- Message -->
+
+                        <div
+                            id="requestMessage"
+                            class="form-message"
+                        ></div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INFORMATION SECTION ================= -->
+
+    <section class="request-info-section">
+
+        <div class="container">
+
+            <div class="section-heading center">
+
+                <span class="section-tag">
+                    IMPORTANT
+                </span>
+
+                <h2>
+                    Before You
+                    <span>Submit</span>
+                </h2>
+
+                <p>
+                    A few things to keep in mind while creating
+                    a blood request.
+                </p>
+
+            </div>
+
+
+            <div class="request-info-grid">
+
+
+                <div class="info-card">
+
+                    <div class="info-card-icon">
+                        🏥
+                    </div>
+
+                    <h3>
+                        Verify Hospital Details
+                    </h3>
+
+                    <p>
+                        Make sure the hospital or medical center
+                        information is correct.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-card-icon">
+                        🩸
+                    </div>
+
+                    <h3>
+                        Select Correct Blood Group
+                    </h3>
+
+                    <p>
+                        Carefully select the blood group required
+                        for the patient.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-card-icon">
+                        📞
+                    </div>
+
+                    <h3>
+                        Keep Contact Available
+                    </h3>
+
+                    <p>
+                        Provide a working contact number for
+                        coordination.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+
+                    <span class="logo-icon">
+                        🩸
+                    </span>
+
+                    <span>
+                        Life<span>Drop</span>
+                    </span>
+
+                </a>
+
+                <p>
+                    Connecting blood donors with people who need
+                    blood — making help easier, faster and more accessible.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+                <a href="request.html">
+                    Request Blood
+                </a>
+
+                <a href="register.html">
+                    Become a Donor
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>
+                    Explore
+                </h3>
+
+                <a href="index.html#blood-groups">
+                    Blood Groups
+                </a>
+
+                <a href="index.html#how-it-works">
+                    How It Works
+                </a>
+
+                <a href="index.html#find-blood">
+                    Find Blood
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    📧 support@lifedrop.com
+                </p>
+
+                <p>
+                    📍 India
+                </p>
+
+                <p>
+                    🩸 Blood Donation Platform
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 LifeDrop. Built to connect people and save lives.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= PAGE JAVASCRIPT ================= -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const form =
+                document.getElementById("bloodRequestForm");
+
+            const message =
+                document.getElementById("requestMessage");
+
+            const contact =
+                document.getElementById("contact");
+
+
+            /* ================= PHONE INPUT ================= */
+
+            if (contact) {
+
+                contact.addEventListener("input", function () {
+
+                    this.value =
+                        this.value.replace(/\D/g, "").slice(0, 10);
+
+                });
+
+            }
+
+
+            /* ================= DATE ================= */
+
+            const requiredDate =
+                document.getElementById("requiredDate");
+
+            if (requiredDate) {
+
+                const today =
+                    new Date().toISOString().split("T")[0];
+
+                requiredDate.min = today;
+
+            }
+
+
+            /* ================= FORM SUBMIT ================= */
+
+            if (form) {
+
+                form.addEventListener("submit", function (event) {
+
+                    event.preventDefault();
+
+
+                    const patientName =
+                        document
+                            .getElementById("patientName")
+                            .value
+                            .trim();
+
+
+                    const contactValue =
+                        document
+                            .getElementById("contact")
+                            .value
+                            .trim();
+
+
+                    const blood =
+                        document
+                            .getElementById("requiredBlood")
+                            .value;
+
+
+                    const units =
+                        Number(
+                            document
+                                .getElementById("units")
+                                .value
+                        );
+
+
+                    const hospital =
+                        document
+                            .getElementById("hospital")
+                            .value
+                            .trim();
+
+
+                    const city =
+                        document
+                            .getElementById("requestCity")
+                            .value
+                            .trim();
+
+
+                    const date =
+                        document
+                            .getElementById("requiredDate")
+                            .value;
+
+
+                    const priority =
+                        document
+                            .getElementById("priority")
+                            .value;
+
+
+                    /* ================= VALIDATION ================= */
+
+                    if (patientName.length < 2) {
+
+                        showMessage(
+                            "⚠️ Please enter the patient's name.",
+                            "error"
+                        );
+
+                        return;
+
+                    }
+
+
+                    if (!/^\d{10}$/.test(contactValue)) {
+
+                        showMessage(
+                            "⚠️ Please enter a valid 10-digit contact number.",
+                            "error"
+                        );
+
+                        return;
+
+                    }
+
+
+                    if (blood === "") {
+
+                        showMessage(
+                            "⚠️ Please select the required blood group.",
+                            "error"
+                        );
+
+                        return;
+
+                    }
+
+
+                    if (units < 1 || units > 20) {
+
+                        showMessage(
+                            "⚠️ Units required must be between 1 and 20.",
+                            "error"
+                        );
+
+                        return;
+
+                    }
+
+
+                    if (hospital.length < 2) {
+
+                        showMessage(
+                            "⚠️ Please enter the hospital name.",
+                            "error"
+                        );
+
+                        return;
+
+                    }
+
+
+                    if (city.length < 2) {
+
+                        showMessage(
+                            "⚠️ Please enter the city.",
+                            "error"
+                        );
+
+                        return;
+
+                    }
+
+
+                    if (date === "") {
+
+                        showMessage(
+                            "⚠️ Please select the required date.",
+                            "error"
+                        );
+
+                        return;
+
+                    }
+
+
+                    if (priority === "") {
+
+                        showMessage(
+                            "⚠️ Please select the request priority.",
+                            "error"
+                        );
+
+                        return;
+
+                    }
+
+
+                    /* ================= SUCCESS ================= */
+
+                    showMessage(
+                        "✅ Blood request submitted successfully! Backend connection will be added next.",
+                        "success"
+                    );
+
+
+                    form.reset();
+
+
+                    if (requiredDate) {
+
+                        const today =
+                            new Date()
+                                .toISOString()
+                                .split("T")[0];
+
+                        requiredDate.min = today;
+
+                    }
+
+                });
+
+            }
+
+
+            /* ================= MESSAGE ================= */
+
+            function showMessage(text, type) {
+
+                if (!message) {
+                    return;
+                }
+
+                message.textContent = text;
+
+                message.className =
+                    "form-message " + type;
+
+                message.scrollIntoView({
+                    behavior: "smooth",
+                    block: "nearest"
+                });
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
